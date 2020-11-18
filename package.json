@@ -1,0 +1,109 @@
+{
+  "name": "bullean",
+  "version": "0.0.1",
+  "description": "boolean expression interpreter",
+  "keywords": [
+    "bullean",
+    "boolean",
+    "expression",
+    "interpreter"
+  ],
+  "homepage": "https://github.com/codejamninja/bullean",
+  "bugs": {
+    "url": "https://github.com/codejamninja/bullean/issues",
+    "email": "jam@codejam.ninja"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jam Risser",
+    "email": "jam@codejam.ninja",
+    "url": "https://codejam.ninja"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codejamninja/bullean"
+  },
+  "scripts": {
+    "build": "make -s build",
+    "clean": "make -s clean",
+    "coverage": "make -s coverage",
+    "format": "make -s format",
+    "inc": "npm version patch --git=false 2>/dev/null || true",
+    "lint": "make -s lint",
+    "make": "make",
+    "prepare": "make -s prepare",
+    "purge": "make -s purge",
+    "report": "make -s report",
+    "spellcheck": "make -s spellcheck",
+    "start": "make -s start",
+    "test": "make -s test",
+    "test:ui": "make test-ui",
+    "test:watch": "make -s test-watch"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "core-js": "^3.7.0",
+    "pegjs": "^0.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.6",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-decorators": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "@types/jest": "^26.0.15",
+    "@types/pegjs": "^0.10.2",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "babel-loader": "^8.2.1",
+    "babel-plugin-inline-import": "^3.0.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "cspell": "^4.2.2",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
+    "jest-sonar-reporter": "^2.0.0",
+    "lockfile-lint": "^4.3.7",
+    "majestic": "^1.8.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5",
+    "webpack": "^5.5.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "eslintIgnore": [
+    "lib"
+  ],
+  "jest": {
+    "testRegex": "((/(tests|__tests__)((/|/[^_.\n][^/\n]*(/[^_.\n][^/\n]+)*/)[^_.\n][^/\n]*))|((/|/.*/)(([^_.\n][^/\n]*.(spec|test))|(spec|test)))).[jt]sx?$",
+    "testEnvironment": "node",
+    "verbose": true,
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/_setup.ts"
+    ]
+  },
+  "jestSonar": {
+    "reportPath": "node_modules/.tmp/reports",
+    "reportFile": "test-report.xml",
+    "indent": 4
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "none"
+  }
+}

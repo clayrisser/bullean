@@ -28,7 +28,43 @@ npm install --save bullean
 
 ## Usage
 
-[Contribute](https://github.com/codejamninja/bullean/blob/master/CONTRIBUTING.md) usage docs
+```ts
+import Bullean from 'bullean';
+
+const bullean = new Bullean();
+const ast = bullean.parse('hello=world&&howdy=texas');
+console.log(JSON.stringify(ast, null, 2));
+```
+
+This will output the following AST.
+
+```json
+{
+  "op": "and",
+  "predicates": [
+    {
+      "operator": "=",
+      "left": {
+        "name": "hello",
+        "type": "identifier"
+      },
+      "value": "world"
+    },
+    {
+      "operator": "=",
+      "left": {
+        "name": "howdy",
+        "type": "identifier"
+      },
+      "value": "texas"
+    }
+  ]
+}
+```
+
+You can find more examples in the tests at the link below.
+
+[src/bullean.spec.ts](src/bullean.spec.ts)
 
 ## Support
 

@@ -31,6 +31,17 @@ npm install --save bullean
 ```ts
 import Bullean from 'bullean';
 
+const bullean = new Bullean({
+  hello: 'world',
+  howdy: 'texas'
+});
+console.log(bullean.eval('hello=world||howdy=world')); // true
+console.log(bullean.eval('hello=world&&howdy=world')); // false
+```
+
+```ts
+import Bullean from 'bullean';
+
 const bullean = new Bullean();
 const ast = bullean.parse('hello=world&&howdy=texas');
 console.log(JSON.stringify(ast, null, 2));
@@ -40,7 +51,7 @@ This will output the following AST.
 
 ```json
 {
-  "op": "and",
+  "operator": "and",
   "predicates": [
     {
       "operator": "=",

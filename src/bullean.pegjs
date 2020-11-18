@@ -8,7 +8,7 @@ or = head:and tail:('||'and)+ {
     return predicates;
   }, [head]);
   return {
-    op: 'or',
+    operator: 'or',
     predicates: predicates
   };
 } /and
@@ -19,7 +19,7 @@ and = head:paren tail:('&&'paren)+ {
     return predicates;
   }, [head]);
   return {
-    op: 'and',
+    operator: 'and',
     predicates: predicates
   };
 } /paren

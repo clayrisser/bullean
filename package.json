@@ -1,6 +1,6 @@
 {
   "name": "bullean",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "boolean expression interpreter",
   "keywords": [
     "bullean",
@@ -50,6 +50,7 @@
   "dependencies": {
     "@babel/runtime": "^7.12.5",
     "core-js": "^3.7.0",
+    "lodash.get": "^4.4.2",
     "pegjs": "^0.10.0"
   },
   "devDependencies": {
@@ -63,6 +64,7 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-typescript": "^7.12.1",
     "@types/jest": "^26.0.15",
+    "@types/lodash.get": "^4.4.6",
     "@types/pegjs": "^0.10.2",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",

@@ -97,9 +97,9 @@
   "jest": {
     "testRegex": "((/(tests|__tests__)((/|/[^_.\n][^/\n]*(/[^_.\n][^/\n]+)*/)[^_.\n][^/\n]*))|((/|/.*/)(([^_.\n][^/\n]*.(spec|test))|(spec|test)))).[jt]sx?$",
     "testPathIgnorePatterns": [
-      "dist",
-      "es",
-      "lib"
+      "<rootDir>/dist/",
+      "<rootDir>/es/",
+      "<rootDir>/lib/"
     ],
     "testEnvironment": "node",
     "verbose": true,

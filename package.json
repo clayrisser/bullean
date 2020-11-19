@@ -93,6 +93,9 @@
   ],
   "jest": {
     "testRegex": "((/(tests|__tests__)((/|/[^_.\n][^/\n]*(/[^_.\n][^/\n]+)*/)[^_.\n][^/\n]*))|((/|/.*/)(([^_.\n][^/\n]*.(spec|test))|(spec|test)))).[jt]sx?$",
+    "testPathIgnorePatterns": [
+      "lib"
+    ],
     "testEnvironment": "node",
     "verbose": true,
     "setupFilesAfterEnv": [

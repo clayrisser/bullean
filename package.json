@@ -1,6 +1,6 @@
 {
   "name": "bullean",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "boolean expression interpreter",
   "keywords": [
     "bullean",
@@ -70,6 +70,7 @@
     "@typescript-eslint/parser": "^4.8.1",
     "babel-loader": "^8.2.1",
     "babel-plugin-inline-import": "^3.0.0",
+    "babel-plugin-macros": "^2.8.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "cspell": "^4.2.2",
     "eslint": "^7.13.0",
@@ -89,11 +90,15 @@
     "node": ">=6.0.0"
   },
   "eslintIgnore": [
+    "dist",
+    "es",
     "lib"
   ],
   "jest": {
     "testRegex": "((/(tests|__tests__)((/|/[^_.\n][^/\n]*(/[^_.\n][^/\n]+)*/)[^_.\n][^/\n]*))|((/|/.*/)(([^_.\n][^/\n]*.(spec|test))|(spec|test)))).[jt]sx?$",
     "testPathIgnorePatterns": [
+      "dist",
+      "es",
       "lib"
     ],
     "testEnvironment": "node",

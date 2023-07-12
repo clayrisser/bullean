@@ -4,6 +4,8 @@
 
 > boolean expression interpreter
 
+![](assets/bullean.png)
+
 Please ★ this repo if you found it useful ★ ★ ★
 
 This is based on the rancher catalog app show_if question variable.
